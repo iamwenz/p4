@@ -1,0 +1,38 @@
+Project 4
++ By: CHIWEN LAI
++ Production URL: <http://p4.chiwenlai.me>
+
+## Feature summary
+
++ Visitors can register/log in
++ Gereral Users can add/delete appointments with specified veterinarian, the schedules that are not available is hidden automatically
++ General Users can also view the news from the clinic on the home page slide show
++ Admin Users can add/update/delete veterinarian information the administrator account
++ Admin Users can add/update/delete News slide with the administrator account
++ Account registered with first name "rootuser" are admin accounts, They can access the admin features
++ The navigation menu is changed according to the account type
+
+
+## Database summary
+*Describe the tables and relationships used in your database. Delete the examples below and replace with your own info.*
+
++ My application has 4 tables in total (`users`, `appointments`, `veterinarians`, `slides`)
++ There's a many-to-many relationship between `appointments` and `veterinarians`
++ There's a one-to-many relationship between `appointments` and `users`
+
+## Outside resources
+*Your list of outside resources go here*
++ https://getbootstrap.com/docs/3.3/
++ https://www.w3schools.com/cssref/css3_pr_opacity.asp
++ https://laravel.com/docs/5.8/eloquent#retrieving-models
+
+## Code style divergences
++ Template inheritance for views
++ Camel case for naming
++ Eloquent model and database naming convention
++ Separation of CSS file
+
+## Notes for instructor
+*Any notes for me to refer to while grading; if none, omit this section*
++ There is a root account to edit the admin contents, the existing account is rootuser@gmail.com/12345678
++ Also try to register general user account to view and make appointments

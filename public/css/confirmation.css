@@ -1,0 +1,22 @@
+table {
+  width: 40vw;
+}
+
+table, th, td {
+  border: 1px solid grey;
+}
+
+th.symptom {
+  text-align: center;
+}
+
+td.symptom {
+  text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
